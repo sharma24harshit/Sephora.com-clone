@@ -7,8 +7,9 @@ PopoverHeader,
 PopoverBody,
 PopoverFooter,
 PopoverArrow,
-PopoverCloseButton,
+PopoverCloseButton,Input,IconButton ,
 Portal} from "@chakra-ui/react"
+import {SearchIcon} from "@chakra-ui/icons";
 //import {useState} from "react";
 function Home (){
 
@@ -21,11 +22,14 @@ return (
             <Heading size="md" >Allure(Logo)</Heading>
         </Box>
         <Spacer/>
+        <IconButton aria-label='Search database' icon={<SearchIcon />} />
+        <Input placeholder='Search' size='sm'  borderRadius="18px" width="400px" />
 {/* ------------------------------------------------------------------------------ */}
 <Popover>
   <PopoverTrigger>
     <Button>Trigger</Button>
   </PopoverTrigger>
+  <div style={{display:"none"}} >
   <Portal >
     <PopoverContent className="content" >
       <PopoverArrow />
@@ -37,6 +41,7 @@ return (
       <PopoverFooter>This is the footer</PopoverFooter>
     </PopoverContent>
   </Portal>
+  </div>
 </Popover>
 {/* ------------------------------------------------------------------------------ */}
        <Spacer/>
