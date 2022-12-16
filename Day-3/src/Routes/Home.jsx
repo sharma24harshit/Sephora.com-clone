@@ -2,27 +2,34 @@ import Navbar from "../Components/Navbar";
 import { Card,Image,Stack,Heading,Text,CardBody } from '@chakra-ui/react'
 import {useState} from "react";
 function Home(){
-  const[data,setData] = useState({id:"",img:"",title:"",text:""});
+  const[data,setData] = useState([]);
+  const[obj,setObj] = useState({img:"",title:"",text:""});
 
-const postdata = async(data)=>{
-const response  = await fetch (`http://localhost:3000/Home`,{
+const postdata = async(obj)=>{
+  try {
+    const response  = await fetch (`http://localhost:8080/just_dropped`,{
   method:"POST",
-  body:JSON.stringify(data),
+  body:JSON.stringify(obj),
   headers:{
     'Content-Type':'application/json',
   }
 });
 const res = await response.json();
-console.log(res);
-setData({img:"",title:"",text:"",id:""});
+setObj({img:"",title:"",text:""})
+  } catch (error) {
+    console.log(error);
+  }
+
 }
 
 const handleSubmit = (e)=>{
 e.preventDefault();
-postdata(data)
+postdata(obj);
+setData([...data,obj]);
+
 };
 const handleChange  =(e)=>{
-setData({...data,[e.target.name]:e.target.value});
+setObj({...obj,[e.target.name]:e.target.value});
 };
   return (
     <div>
@@ -43,6 +50,16 @@ setData({...data,[e.target.name]:e.target.value});
        </Stack>
      </CardBody>
     </Card> */}
+    
+    <div  >
+    <form  onSubmit={handleSubmit} style={{border:"1px solid black",width:"40%",margin:"auto",marginTop:"20px"}} >
+      
+      <input type="text" placeholder="img" name="img" onChange={handleChange} style={{border:"1px solid black"}} value={obj.img}/><br />
+      <input type="text"  placeholder="title" name="title" onChange={handleChange} style={{border:"1px solid black"}} value={obj.title}/><br />
+      <input type="text" placeholder="text" name="text" onChange={handleChange} style={{border:"1px solid black"}} value={obj.text}/><br />
+      <input type="submit" value="submit" />
+    </form>
+    </div>
     
      
 
