@@ -1,0 +1,448 @@
+{
+  "Home": {
+    "chosen_for_you": [
+      {
+        "id": "1",
+        "img": "https://www.sephora.com/productimages/sku/s2518959-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=166",
+        "title": "Rare Beauty by Selena Go...",
+        "text": "Soft Pinch Liquid Blush"
+      },
+      {
+        "id": "2",
+        "img": "https://www.sephora.com/productimages/sku/s1966258-main-zoom.jpg?pb=2020-03-allure-readers-choice-2019&imwidth=166",
+        "title": "LANEIGE",
+        "text": "Lip Sleeping Mask Intense Hydration with Vitamin C"
+      },
+      {
+        "id": "3",
+        "img": "https://www.sephora.com/productimages/sku/s1802412-main-zoom.jpg?imwidth=166",
+        "title": "Sol de Janerio",
+        "text": "Brazilian Bum Bum Body Cream"
+      },
+      {
+        "id": "4",
+        "img": "https://www.sephora.com/productimages/sku/s2181006-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "Tatcha",
+        "text": "The Drwy Skin Cream Plumping & Hydration.."
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2210482-main-zoom.jpg?imwidth=166",
+        "title": "LANEIGE",
+        "text": "Lip Glowy Balm",
+        "id": "eJl0zGq"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2031391-main-zoom.jpg?imwidth=166",
+        "title": "The Ordinary",
+        "text": "Niacinamide 10% + Zinc 1% Oil Control Serum",
+        "id": "-pNXMan"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2606085-main-zoom.jpg?imwidth=166",
+        "title": "Charlotte Tilbury",
+        "text": "Airbrush Flawless Finish Setting Powder",
+        "id": "D7ZDugU"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2333771-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+        "title": "Kosas",
+        "text": "Revealer Super creamy + Brightening Concealer ...",
+        "id": "rPZ2q4A"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2362168-main-zoom.jpg?imwidth=166",
+        "title": "Rare Beauty by Selena Go...",
+        "text": "Positive Light Liquid Luminizer Highlight",
+        "id": "WCqpMdQ"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2447738-main-zoom.jpg?imwidth=166",
+        "title": "Charlotte Tilbury",
+        "text": "Mini Pillow Talk Lipstick & Liner Set",
+        "id": "fZr8b3h"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2495497-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "Summer Fridays",
+        "text": "Lip Butter Balm",
+        "id": "zi4lLua"
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2590032-main-zoom.jpg?imwidth=166",
+        "title": "fenty Beauty by Rihanna",
+        "text": "pro Filt'r Soft Matte Longwear Liquid",
+        "id": "cDpr707"
+      }
+    ],
+    "just_dropped": [
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2618742-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+        "title": "Caudalie",
+        "text": "Resveratrol-Lift Firming Essentials Set",
+        "id": 1
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2599959-main-zoom.jpg?imwidth=166",
+        "title": "KAYALI",
+        "text": "Vanilla Royale Sugared Patchouli | 64 Eau de ...",
+        "id": 2
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2568707-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "SEPHORA COLLECTION",
+        "text": "Vitamin Face Masks",
+        "id": 3
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2600245-main-zoom.jpg?imwidth=166",
+        "title": "VOLUSPA",
+        "text": "Mini Tin trio Candle Gift Set",
+        "id": 4
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2600187-main-zoom.jpg?imwidth=166",
+        "title": "VOLUSPA",
+        "text": "Frosted Holly Berry Glass Jar Candle",
+        "id": 5
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2619062-main-zoom.jpg?imwidth=166",
+        "title": "Peter Thomas Roth",
+        "text": "Full-Size Water Drench 24/7 Essentials",
+        "id": 6
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2608727-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=166",
+        "title": "Necessaire",
+        "text": "The Conditioner-Hyrating Cream with ...",
+        "id": 7
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2625366-main-zoom.jpg?imwidth=166",
+        "title": "Peter Thomas Roth",
+        "text": "Multi-Masker 4-Piece Mask Kit",
+        "id": 8
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2630804-main-zoom.jpg?imwidth=166",
+        "title": "Wander Beauty",
+        "text": "Limited Edition: Baggage Claim Festive Fuchsi ...",
+        "id": 9
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2594661-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "GUERLAIN",
+        "text": "Abeille Royale Best Seller Skincare Set",
+        "id": 10
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2618981-main-zoom.jpg?imwidth=166",
+        "title": "NatashaDenona",
+        "text": "retro Glam Eyeshadow Palette",
+        "id": 11
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2593416-main-zoom.jpg?imwidth=166",
+        "title": "Virtue",
+        "text": "Flourish Density Booster & Healing Oil Holiday Set",
+        "id": 12
+      }
+    ],
+    "beauty_offers": [
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-same-day-delivery-site-desktop-mobile-app-beauty-offers-page-banner-existing-client-us-can-final.jpg?imwidth=240",
+        "title": "Don't Miss FREE Same-Delivery#",
+        "text": "It's not too late to get those last-minute gifts!",
+        "id": 1
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-12-13-20off-frag-site-desktop-mobile-app-beauty-offers-page-banner-1000x750-us.jpg?imwidth=240",
+        "title": "Get 20% Off Full-Size Fragrances",
+        "text": "December 13-24. Use code FRAGRANCE20.",
+        "id": 2
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/freeship2021/2022-08-01-free-ship-site-beauty-offers-page-banner-us-can-final.jpg?imwidth=240",
+        "title": "Beauty Insiders Get Free Shipping",
+        "text": "It's Fast, Reliable, and applies to every order.",
+        "id": 3
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-12-08-WATCH-YA-TONE-DLX-SAMPLE-site-beauty-offers-banner-1000x750.jpg?imwidth=240",
+        "title": "Free FENTY SKIN Trial Size",
+        "text": "Visible even skin tone with the new Watch Ya Tone 5% .",
+        "id": 4
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/November/2022-holiday-cyberbag-site-desktop-mobile-app-beauty-offers-banner-1000x750.jpg?imwidth=240",
+        "title": "Get a Free Sample Bag",
+        "text": "Treat yourself to one of four bags packed full of trial sizes.",
+        "id": 5
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-12-16-skincare-challenge-tatcha-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240",
+        "title": "Improve Your skin barries in One week",
+        "text": "Revitalize skin and visibly calm irritation with Tatcha.",
+        "id": 6
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/December/2022-12-16-promo-app-beauty-offers-banner-RETROGLAM-us-ca-handoff.jpg?imwidth=240",
+        "title": "Free Eyeshadow Trial Size",
+        "text": "Get a Natasha Denona trial size in shade Flutter from the NEW Retro Glam palette.",
+        "id": 7
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/November/2022-11-XX-hair-challenge-amika-kerastase-site-desktop-mobile-app-beauty-offers-page-banner-en-us-v1.jpg?imwidth=240",
+        "title": "Three FREE Kerastase Samples",
+        "text": "Get major hydration with bestselling serums for your hair and scalp.",
+        "id": 8
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/November/2022-fragrance-q4-site-beauty-offers-banner-1000x750-smgm-us-khols.jpg?imwidth=240",
+        "title": "Spend More, Get More Fragrance",
+        "text": "Get1 mini with $45 product purchase, 2 minis wih $75 product purchase.",
+        "id": 9
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/promo/beautyoffers/2022/November/percent-off-basket-app-content-card-promo.png?imwidth=240",
+        "title": "Get 10% Off Your Next Purchase.",
+        "text": "When you sign up for text updates. Plus, never miss out on exclusive releases, events, and offers.",
+        "id": 10
+      }
+    ],
+    "selling_fast": [
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2604817-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "fresh",
+        "text": "Sugar Collection Lip Care Set",
+        "id": 1
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2457299-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=166",
+        "title": "MAKEUP BY MARIO",
+        "text": "SoftSculpt Shaping Stick",
+        "id": 2
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2418663-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=166",
+        "title": "Rare Beauty by Selena Go...",
+        "text": "Stay Vulnerable Melting Cream Blush",
+        "id": 3
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2035079-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "Amika",
+        "text": "Soulfood Nourishing hair Mask",
+        "id": 4
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2549970-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "Tower 28 Beauty",
+        "text": "ShinOn Lip Jelly Non-Sticky Gloss",
+        "id": 5
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s1802412-main-zoom.jpg?imwidth=166",
+        "title": "Sol de Janerio",
+        "text": "Brazilian Bum Bum Body Cream",
+        "id": 6
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2619310-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+        "title": "Glow Recipe",
+        "text": "hey You, You're Glowing Watermelon Set",
+        "id": 7
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s70680-main-zoom.jpg?imwidth=166",
+        "title": "CLINIQUE",
+        "text": "Almost Lipstick",
+        "id": 8
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2592053-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+        "title": "Briogeo",
+        "text": "Superfoods Leave-In Conditioner & Hair Mask..",
+        "id": 9
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2335198-main-zoom.jpg?imwidth=166",
+        "title": "ILIA",
+        "text": "Limitless Lash Lengthening Clean ...",
+        "id": 10
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2556744-main-zoom.jpg?imwidth=166",
+        "title": "Touchland",
+        "text": "Power Mist Hydrating Hand Sanitizer",
+        "id": 11
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2366524-main-zoom.jpg?imwidth=166",
+        "title": "Charlotte Tilbury",
+        "text": "Beauty Highlighter Wand",
+        "id": 12
+      }
+    ],
+    "beauty_insider_rewards": [
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2638534-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+        "title": "Glow Recipe",
+        "text": "Strawberry Smooth BHA + AHA Salicylic Acid Serum",
+        "id": 1
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2581569-main-zoom.jpg?imwidth=166",
+        "title": "Anastasia Beverly Hills",
+        "text": "Strong Hold Clear and Organic Brow Gel",
+        "id": 2
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2638542-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=166",
+        "title": "Herbivore",
+        "text": "Aquarius Pore Purifying BHA Cream",
+        "id": 3
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2631505-main-zoom.jpg?imwidth=166",
+        "title": "First Aid Beauty",
+        "text": "KP Bump Eraser Body Scrub with 10% AHA ",
+        "id": 4
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2356442-main-zoom.jpg?imwidth=166",
+        "title": "Smashbox",
+        "text": "Photo Finish Oil & Shine Control Primer 0.25 fl oz ...",
+        "id": 5
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2413219-main-zoom.jpg?imwidth=166",
+        "title": "Laurs Mercier",
+        "text": "Pure Canvas Primer Blurring Body Scrub",
+        "id": 6
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2325678-main-zoom.jpg?imwidth=166",
+        "title": "CLINIQUE",
+        "text": "Take the day Off makeup remover for Lids ...",
+        "id": 7
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2607026-main-zoom.jpg?imwidth=166",
+        "title": "MAKE UP FOR EVER",
+        "text": "Aqua Resist Graphic Pen 24HR Waterproof Intens",
+        "id": 8
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2650539-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=166",
+        "title": "ILIA",
+        "text": "Fullest Volumizing Mascara 100% Natural",
+        "id": 9
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s1727924-main-zoom.jpg?imwidth=166",
+        "title": "Versace",
+        "text": "Bright Crystal Aqua Resist Graphic Pen 24HR",
+        "id": 10
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2472967-main-zoom.jpg?imwidth=166",
+        "title": "Caudalie",
+        "text": "Vinosource Moisturizing sorbet",
+        "id": 11
+      },
+      {
+        "img": "https://www.sephora.com/productimages/sku/s2650190-main-zoom.jpg?imwidth=166",
+        "title": "CLINIQUE",
+        "text": "Moisture Surge 100H Auto-Replenishing ...",
+        "id": 12
+      }
+    ],
+    "featured_categories": [
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/092022/Homepage/RWD/gifts%2032@3x.png?imwidth=53",
+        "title": "Gifts & Value Sets",
+        "id": 1
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/luxury_beauty.svg",
+        "title": "Luxury Skincare",
+        "id": 2
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/100422/Homepage/RWD/under25%2032@3x.jpg?imwidth=53",
+        "title": "Makeup Under $25",
+        "id": 3
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_skincare_cleanser_moisturizer_us_ca_rwd_slice.jpg?imwidth=53",
+        "title": "Moisturizers",
+        "id": 4
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/091322/Homepage/RWD/hair%20dryer.JPG?imwidth=53",
+        "title": "Hair Styling & Treatments",
+        "id": 5
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_fragrance_bottle_us_ca_rwd_slice.jpg?imwidth=53",
+        "title": "Perfume",
+        "id": 6
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_sephoracollection_SC_us_ca_rwd_slice.jpg?imwidth=53",
+        "title": "Sephora Collection",
+        "id": 7
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_samples_32_us_ca_rwd_slice.png?imwidth=53",
+        "title": "Jumbos",
+        "id": 8
+      }
+      
+    ],
+    "need_a_little_guidance":[
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg",
+        "title": "Holiday Gift Guide",
+        "id": 1
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/gift_finder.svg",
+        "title": "Gifting Quiz",
+        "id": 2
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/foundation_guide.svg",
+        "title": "Foundation Quiz",
+        "id": 3
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_age.svg",
+        "title": "Skincare Routine Builder",
+        "id": 4
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_healthy%20scalp%20guide_us_ca_rwd_slice.png?imwidth=53",
+        "title": "Shiny Hair Guide",
+        "id": 5
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/niche_fragrances.svg",
+        "title": "Fragrance Hub",
+        "id": 6
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_quiz.svg",
+        "title": "Clinical Skincare",
+        "id": 7
+      },
+      {
+        "img": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_BOB_us_rwd_slice.png?imwidth=53",
+        "title": "Black-Owned Brands",
+        "id": 8
+      }
+    ]
+  }
+
+}
