@@ -287,7 +287,7 @@ const fetchdata =async()=>{
   <p>Report a vulnerability</p>
  </div>
  <div className="footer_mid_mini_box" >
-  <h2></h2>
+  <h2>My Sephora</h2>
   <p></p>
   <p></p>
   <p></p>
