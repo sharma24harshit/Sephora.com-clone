@@ -62,7 +62,7 @@ text-align: start;
 .cart_btn:hover{
     background-color: rgb(243, 237, 237);
 }
-/* /-------------------  Flex Card 1 --------------/ */
+/* /--------------------------------------------------  Flex Card 1 ------------------------------------------/ */
 .flexCard1_home{
 display: flex;
 width:92%;
@@ -95,7 +95,7 @@ visibility: hidden;
 }
 .text_container1{
     width:22%;
-}/* /-------------------  home page Image section --------------/ */
+}/* /--------------------------------  home page Image section -----------------------------------------/ */
 
 .homePage_image_container{
 display: grid;
@@ -143,4 +143,130 @@ text-decoration: underline;
 }
 .home_top_img>img{
     width:50%;
+}
+/* /-------------------------------------   ProductsPageCard styling -------------------------------------------/ */
+.ProductsPageCard_container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width:92%;
+       margin: auto;
+        gap:25px;
+        margin-top: 70px;
+}
+.products_page_heading{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.ProductsPageCard_box{
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: transform ease 250ms;
+}
+.ProductsPageCard_box:hover{
+    transform: translate(0px,5px);
+}
+.ProductsPageCard_box:hover p{
+    text-decoration: underline;
+}
+.ProductsPageCard_img{
+padding: 15px;
+text-align: center;
+}
+.ProductsPageCard_img>img{
+    margin: auto;
+    width:90%;
+}
+.ProductsPageCard_text{
+    padding: 15px;
+    margin-top: 10px;
+}
+.ProductsPageCard_text>h3{
+   font-weight: bold;
+   font-size: 18px;
+   text-align: start;
+   margin-bottom: 15px;
+   height:20px;
+   }
+.ProductsPageCard_text>p{
+   font-size: 15px;
+   text-align: start;
+   height:50px;
+   color: black;
+   }
+.ProductsPageCard_text>h2{
+  font-size: 20px;
+  text-align: start;
+  height:30px;
+  font-weight: bold;
+}
+/* /-------------------------------------   single Product card styling -------------------------------------------/ */
+
+.single_product_box{
+ display:flex;
+ margin:auto;
+ width:90%;
+ padding:15px;
+ margin-top: 50px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.single_product_img{
+width:30%;
+height: 400px;
+}
+.single_product_img>img{
+width:80%;
+height: 80%;
+margin: auto;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.single_product_text{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+padding: 15px;
+width:40%;
+margin-left: 25px;
+}
+.single_product_text span{
+font-size: 13px;
+font-weight: 600;
+text-align: start;
+}
+.single_product_text b{
+    color:red;
+}
+.single_product_text>h3{
+font-size: 20px;
+text-align: start;
+font-weight: bold;
+}
+.single_product_text>p{
+font-size: 18px;
+text-align: start;
+ }
+.single_product_text>h2{
+font-size: 25px;
+text-align: start;
+font-weight: bold;
+margin-top: 10px;
+ }
+.single_product_cart_btn{
+ background-color: rgb(207,17,44);
+ width:180px;
+ border:0px;
+ height: 45px;
+ color: white;
+ font-size:18px ;
+ margin-top: 60px;
+ border-radius: 25px;
+ font-weight: bold;
+}
+.single_product_cart_btn:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.cart_remove_btn{
+    border:1px solid black;
+    padding:6px;
+    border-radius: 10px;
 }

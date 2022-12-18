@@ -2,11 +2,11 @@ import {useState} from "react";
 import Navbar from "../Components/Navbar";
 function Adminpage(){
   const[data,setData] = useState([]);
-  const[obj,setObj] = useState({img:"",title:""});
+  const[obj,setObj] = useState({img:"",title:"",text:"",price:""});
                                                     // ,text:""
 const postdata = async(obj)=>{
   try {
-    const response  = await fetch (`http://localhost:8080/featured_categories`,{
+    const response  = await fetch (`http://localhost:8080/home_images`,{
   method:"POST",
   body:JSON.stringify(obj),
   headers:{
@@ -14,7 +14,7 @@ const postdata = async(obj)=>{
   }
 });
 const res = await response.json();
-setObj({img:"",title:""})    
+setObj({img:"",title:"",text:"",price:""})    
 // ,text:""
   } catch (error) {
     console.log(error);
@@ -34,29 +34,14 @@ setObj({...obj,[e.target.name]:e.target.value});
   return (
     <div>
       <Navbar/>
-   
-    {/* <Card maxW='sm'>
-      <CardBody>
-        <Image
-       src='https://www.sephora.com/productimages/sku/s2518959-main-zoom.jpg?pb=allure-2022-bestofbeauty-badge&imwidth=166'
-       alt='Green double couch with wooden legs'
-       borderRadius='lg'
-        />
-        <Stack mt='6' spacing='3'>
-        <Heading size='md'>Living room Sofa</Heading>
-        <Text>
-          This sofa is perfect for modern tropical spaces, baroque inspired
-        </Text>
-       </Stack>
-     </CardBody>
-    </Card> */}
     
     <div  >
     <form  onSubmit={handleSubmit} style={{border:"1px solid black",width:"40%",margin:"auto",marginTop:"20px"}} >
       
       <input type="text" placeholder="img" name="img" onChange={handleChange} style={{border:"1px solid black"}} value={obj.img}/><br />
       <input type="text"  placeholder="title" name="title" onChange={handleChange} style={{border:"1px solid black"}} value={obj.title}/><br />
-      {/* <input type="text" placeholder="text" name="text" onChange={handleChange} style={{border:"1px solid black"}} value={obj.text}/><br /> */}
+      <input type="text" placeholder="text" name="text" onChange={handleChange} style={{border:"1px solid black"}} value={obj.text}/><br />
+      <input type="number" placeholder="price" name="price" onChange={handleChange} style={{border:"1px solid black"}} value={obj.price}/><br />
       <input type="submit" value="submit" />
     </form>
     </div>

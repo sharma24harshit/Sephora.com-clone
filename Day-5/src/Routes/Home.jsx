@@ -1,10 +1,11 @@
 import "./style.css";
 import Navbar from "../Components/Navbar";
-import {useState,useEffect} from "react";
+import {useState,useEffect,useContext} from "react";
 import HomePageCard1 from "../Components/HomePageCard1";
 import HomePageCard2 from "../Components/HomePageCard2";
-import { BiUserCircle } from "react-icons/bi";
-
+import Footer from "../Components/Footer";
+import { AuthContext } from "../AuthContext/AuthContext";
+import { useNavigate } from "react-router-dom";
 function Home(){
  const [data1,setdata1]  = useState([]);
  const [data2,setdata2]  = useState([]);
@@ -13,6 +14,8 @@ function Home(){
  const [data5,setdata5]  = useState([]);
  const [data6,setdata6]  = useState([]);
  const [data7,setData7]  = useState([]);
+ const { setBaseUrl} = useContext(AuthContext);
+ const navigate = useNavigate();
 //  const [data8,setdata8]  = useState(0);
  
  
@@ -54,13 +57,32 @@ const fetchdata =async()=>{
     console.log(error)
   }
  
-}
+};
+
+const handleClick = ()=>{
+  setBaseUrl(`beauty`);
+  navigate("/products");
+};
+const handleClick1 = ()=>{
+  setBaseUrl(`Just_Dropped`);
+  navigate("/products");
+};
+const handleClick2 = ()=>{
+  setBaseUrl(`Beauty_Offers`);
+  navigate("/products");
+};
+const handleClick3 = ()=>{
+  setBaseUrl(`home_images`);
+  navigate("/products");
+};
+
+
 
 
   return (
     <div>
       <Navbar/>
-<div className="home_top_img" >
+<div className="home_top_img" onClick={handleClick3}>
 <img src="https://www.sephora.com/contentimages/2022-12-20off-frag-site-home-page-hero-banner.jpg?imwidth=545" alt="data8"  />
 <img src="https://www.sephora.com/contentimages/2022-12-06-slotting-gifts-by-price-site-rwd-hp-hero-banner-4-product-english-us-handoff_01.jpg?imwidth=545" alt="2" />
 </div>
@@ -70,7 +92,7 @@ const fetchdata =async()=>{
     <h2 className="product_heading" >Chosen For You</h2>
      <div className="grid_container">
       {data1 && data1.map((el)=>(
-        <div key={el.id} className="grid_box" >
+        <div key={el.id} className="grid_box" onClick={handleClick} >
         <HomePageCard1  id={el.id} img={el.img} title={el.title} text={el.text} />
        </div>
       ))}
@@ -80,7 +102,7 @@ const fetchdata =async()=>{
      <h2 className="product_heading" >Just Dropped</h2>
      <div className="grid_container">
       {data2 && data2.map((el)=>(
-        <div key={el.id} className="grid_box" >
+        <div key={el.id} className="grid_box" onClick={handleClick1} >
         <HomePageCard1  id={el.id} img={el.img} title={el.title} text={el.text} />
        </div>
       ))}
@@ -94,7 +116,7 @@ const fetchdata =async()=>{
 
      <div className="grid_container2">
       {data7 && data7.map((el)=>(
-        <div key={el.id} className="grid_box" >
+        <div key={el.id} className="grid_box" onClick={handleClick2} >
        <div className="grid_img" ><img src={el.img} alt={el.id} /></div>
          <div className="grid_text" style={{height:"110px"}} >
           <h3>{el.title}</h3>
@@ -110,7 +132,7 @@ const fetchdata =async()=>{
 
 <div className="homePage_image_container" style={{marginTop:"70px"}} >
 
-<div className="homePage_image_box" > 
+<div className="homePage_image_box" onClick={handleClick3}> 
 <div className="homePage_image_box_text" style={{backgroundColor:"rgb(172,220,242)"}} >
  <h3>Perfect Presents under $25</h3>
  <h4>Everyone will love unwrapping these makeup and skincare essentials.</h4>
@@ -119,7 +141,7 @@ const fetchdata =async()=>{
 <div className="homePage_image_box_img" ><img src="https://www.sephora.com/contentimages/2022-12-1-sc-sku-site-desktop-mweb-home-page-rwd-marketing-banner-launch-1-800x256-en-us-can.jpg?imwidth=400" alt="img1" /></div>
 </div>
 
-<div className="homePage_image_box" > 
+<div className="homePage_image_box" onClick={handleClick3}> 
 <div className="homePage_image_box_text" style={{backgroundColor:"rgb(68,149,83)" ,color:"white"}} >
 <h3>Get Your Gifts in Time</h3>
  <h4>Fast and easy options for stress-free holiday shopping</h4>
@@ -128,7 +150,7 @@ const fetchdata =async()=>{
 <div className="homePage_image_box_img" ><img src="https://www.sephora.com/contentimages/2022-12-05-holiday-der-b-launch-site-mobile-desktop-home-page-rwd-marketing-banner-ldts-mockup-us-2869-release-800x256.jpg?imwidth=400" alt="img2" /></div>
 </div>
 
-<div className="homePage_image_box" > 
+<div className="homePage_image_box" onClick={handleClick3}> 
 <div className="homePage_image_box_text" style={{backgroundColor:"rgb(1,146,203)",color:"white"}} >
 <h3>Get Gift Advice ASAP</h3>
  <h4>Chat live with a Beauty Advisor for personalized recs.</h4>
@@ -200,7 +222,7 @@ const fetchdata =async()=>{
 
    <div className="homePage_image_container" >
 
-     <div className="homePage_image_box" > 
+     <div className="homePage_image_box" onClick={handleClick3}> 
     <div className="homePage_image_box_text" >
       <h3>Our Commitment to Diversity, Equity & Inclusion</h3>
       <h4> </h4>
@@ -209,7 +231,7 @@ const fetchdata =async()=>{
     <div className="homePage_image_box_img" ><img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/homepage-reassurance-banner-diversity-inclusion-desktop-mobile-us-ca-slice.jpeg?imwidth=400" alt="img1" /></div>
      </div>
 
-     <div className="homePage_image_box" > 
+     <div className="homePage_image_box" onClick={handleClick3}> 
     <div className="homePage_image_box_text" style={{backgroundColor:"rgb(22,96,59)" ,color:"white"}} >
     <h3>Get Your Gifts in Time</h3>
       <h4>Fast and easy options for stress-free holiday shopping</h4>
@@ -218,7 +240,7 @@ const fetchdata =async()=>{
     <div className="homePage_image_box_img" ><img src="https://www.sephora.com/contentimages/2022-holiday-launch-site-desktop-mobile-home-page-rwd-marketing-banner-bottom-banner-ease-and-convenience-800x256-us-can.jpg?imwidth=400" alt="img2" /></div>
      </div>
 
-     <div className="homePage_image_box" > 
+     <div className="homePage_image_box" onClick={handleClick3}> 
     <div className="homePage_image_box_text" style={{backgroundColor:"rgb(198,168,134)"}} >
     <h3>Clean + Planet Positive</h3>
       <h4>Brands on a mission to change your sin and the earth</h4>
@@ -229,100 +251,7 @@ const fetchdata =async()=>{
 
  </div>
 {/* / --------------------------- Footer-------------------------------------------- / */}
- <div className="footer_container">
-
-<div className="footer_top_box">
-   <div className="nav_heading_icons" >
-      <div className="nav_icons"><BiUserCircle /></div>
-      <div> <h3 className="mid-nav-title" >Sign In</h3>
-      <p className="mid-nav-p" >for FREE Shipping</p>
-      </div>
-    </div>
-
-    <div className="nav_heading_icons" >
-      <div className="nav_icons"><BiUserCircle /></div>
-      <div> <h3 className="mid-nav-title" >Sign In</h3>
-      <p className="mid-nav-p" >for FREE Shipping</p>
-      </div>
-    </div>
-
-    <div className="nav_heading_icons" >
-      <div className="nav_icons"><BiUserCircle /></div>
-      <div> <h3 className="mid-nav-title" >Sign In</h3>
-      <p className="mid-nav-p" >for FREE Shipping</p>
-      </div>
-    </div>
-
-    <div className="nav_heading_icons" >
-      <div className="nav_icons"><BiUserCircle /></div>
-      <div> <h3 className="mid-nav-title" >Sign In</h3>
-      <p className="mid-nav-p" >for FREE Shipping</p>
-      </div>
-    </div>
-
-    <div className="nav_heading_icons" >
-      <div className="nav_icons"><BiUserCircle /></div>
-      <div> <h3 className="mid-nav-title" >Sign In</h3>
-      <p className="mid-nav-p" >for FREE Shipping</p>
-      </div>
-    </div>
-
-</div>
- 
- <div className="footer_mid_box" >
- <div className="footer_mid_mini_box" >
-  <h2>About Sephora</h2>
-  <p>About Sephora</p>
-  <p>Newsroom</p>
-  <p>Careers</p>  
-  <p>Sephora Value</p>
-  <p>Supply Value</p>
-  <p>Affiliates</p>
-  <p>Sephora Events</p>
-  <p>Gift cards</p>
-  <p>Sephora Global Sites</p>
-  <p>Diversity Equity & Inclusion</p>
-  <p>Checkout on Instagram</p>
-  <p>Sephora Accelerates</p>
-  <p>Report a vulnerability</p>
- </div>
- <div className="footer_mid_mini_box" >
-  <h2>My Sephora</h2>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
- </div>
- <div className="footer_mid_mini_box" >
-  <h2></h2>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
- </div>
- <div className="footer_mid_mini_box"></div>
- <div className="footer_mid_mini_box"></div>
- </div>
-
- </div>
+ <Footer/>
     </div>
   )
 }

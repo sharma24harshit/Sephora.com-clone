@@ -1,6 +1,6 @@
 import "./navbar.css";
 import { Input,IconButton } from "@chakra-ui/react"
-import {SearchIcon,QuestionIcon} from "@chakra-ui/icons";
+import {SearchIcon} from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 //import {useState} from "react";
 import {useNavigate} from "react-router-dom";
@@ -8,22 +8,30 @@ import { FaRegComment,FaRegHeart,FaShoppingCart } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { BiUserCircle } from "react-icons/bi";
+import { AuthContext } from "../AuthContext/AuthContext";
+import { useContext } from "react";
 function Navbar (){
 const navigate = useNavigate();
+const {user,isAuth ,setIsAuth,setUser} = useContext(AuthContext);
 
 const loginPage = ()=>{
     navigate("/login")
 }
+const logoutPage = ()=>{
+  setIsAuth(false);
+  setUser("Sign In");
+}
 
 return (
+  <div>
     <div className="navbar-container" >
 
-   <div>
-    <Link to="/" ><img src="img" alt="logo" /></Link>
+   <div className="logo" >
+    <Link to="/" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiG-Gs-C3AdOcUPkCK-9DA40-q-toEQwfP4u7fNRs9leRNRFcXFr6hTTCqekHR8c7I3WY&usqp=CAU" alt="logo" /></Link>
    </div>
 
       <div>
-      <IconButton aria-label='Search database' icon={<SearchIcon />} borderRadius="18px" />
+      <IconButton aria-label='Search database' icon={<SearchIcon />} backgroundColor="white" />
       <Input placeholder="Search" size='sm'  borderRadius="18px" width="350px" />
       </div>
 {/* --------------------------------- 1 ------------------------------------------- */}
@@ -110,8 +118,8 @@ return (
       </div>
     </div>
     <div  className="login-btns" >
-        <button className="btn-1" onClick={loginPage} >Sign In</button>
-        <button className="btn-1-create-btn" onClick={loginPage}>Create Account</button>
+        <button className="btn-1" onClick={loginPage} disabled={isAuth?true:false} >Sign In</button>
+        <button className="btn-1-create-btn" onClick={loginPage} disabled={isAuth?true:false} >Create Account</button>
       </div>
   </div>
    <div className="nav-box1-div" >
@@ -154,7 +162,7 @@ return (
   <button className="dropbtn">
     <div className="nav_heading_icons" >
       <div className="nav_icons"><BiUserCircle /></div>
-      <div> <h3 className="mid-nav-title" >Sign In</h3>
+      <div> <h3 className="mid-nav-title" >{user}</h3>
     <p className="mid-nav-p" >for FREE Shipping</p></div>
     </div>
   
@@ -172,8 +180,8 @@ return (
       </div>
     </div>
     <div  className="login-btns" >
-        <button className="btn-1" onClick={loginPage}>Sign In</button>
-        <button className="btn-1-create-btn" onClick={loginPage} >Create Account</button>
+        <button className="btn-1" onClick={loginPage} disabled={isAuth?true:false} >Sign In</button>
+        <button className="btn-1-create-btn" onClick={loginPage} disabled={isAuth?true:false} >Create Account</button>
       </div>
   </div>
   <div className="nav-box1-div" >
@@ -211,11 +219,27 @@ return (
    </div>
   </div>
 <div className="nav-box2" >
-<IconButton  icon={<FaRegComment />} backgroundColor="white" fontSize="30px" />
-<IconButton  icon={<FaRegHeart />} borderRadius="18px" fontSize="30px"/>
-<IconButton  icon={<FaShoppingCart />} borderRadius="18px" fontSize="30px"/>
+  {isAuth?<button className="btn-2" onClick={logoutPage} disabled={isAuth?false:true} >Logout</button>:
+<IconButton  icon={<FaRegComment />} backgroundColor="white" fontSize="30px" />}
+<IconButton  icon={<FaRegHeart />} backgroundColor="white" fontSize="30px"/>
+<Link to="/cart" ><IconButton  icon={<FaShoppingCart />} backgroundColor="white" fontSize="30px"/></Link>
 </div>
 </div> 
+<div className="bottom_navbar" >
+  <p>New</p>
+  <p>Brands</p>
+  <p>Makeup</p>
+  <p>Skincare</p>
+  <p>Hair</p>
+  <p>Fragrance</p>
+  <p>Tools & Brushes</p>
+  <p>Bath & Body</p>
+  <p>Mini Size</p>
+  <p>Gifts</p>
+  <p>Beuty Under $20</p>
+  <p>Sale & Offers</p>
+</div>
+</div>
 )
 }
 

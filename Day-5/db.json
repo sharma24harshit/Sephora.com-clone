@@ -399,9 +399,8 @@
         "title": "Jumbos",
         "id": 8
       }
-      
     ],
-    "need_a_little_guidance":[
+    "need_a_little_guidance": [
       {
         "img": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg",
         "title": "Holiday Gift Guide",
@@ -443,6 +442,344 @@
         "id": 8
       }
     ]
-  }
-
+  },
+  "beauty": [
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2638526-main-zoom.jpg?imwidth=135",
+      "title": "Sephora favourites",
+      "text": "Hottest in Haircare",
+      "price": "15.00",
+      "id": 1
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2632545-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=135",
+      "title": "Briogeo",
+      "text": "Destined For Density Peptide Conditioner for Thicker, Fuller Hair",
+      "price": "13.00",
+      "id": 2
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2641173-main-zoom.jpg?imwidth=135",
+      "title": "Tarte",
+      "text": "Maracuja juicy lip creme",
+      "price": "24.00",
+      "id": 3
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2634772-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=135",
+      "title": "Briogeo",
+      "text": "Destined forDensity Thick + Full Hair Care Value Set.",
+      "price": "135.00",
+      "id": 4
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2641306-main-zoom.jpg?imwidth=135",
+      "title": "Tarte",
+      "text": "Amazonian clay blurring powder foundation",
+      "price": "39.00",
+      "id": 5
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2641157-main-zoom.jpg?imwidth=135",
+      "title": "Tarte",
+      "text": "Tartelette spark Amazonian clay palette",
+      "price": "25.00",
+      "id": 6
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2623460-main-zoom.jpg?imwidth=135",
+      "title": "Maison Margiela",
+      "text": "REPLICA By The Fireplace Fragrance & Candle Duo Set",
+      "price": "76.00",
+      "id": 7
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2640381-main-zoom.jpg?imwidth=135",
+      "title": "Innisfree",
+      "text": "Green Tea Hyaluronic Acid Hydrating Eye Cream",
+      "price": "26.00",
+      "id": 8
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2636660-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=135",
+      "title": "fresh",
+      "text": "Black Tea Anti-Aging Ceramide Moisturizer",
+      "price": "95.00",
+      "id": 9
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2600765-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=135",
+      "title": "Moon Juice",
+      "text": "Mini Acid Potion AHA + BHA Resurfacing Exfoliator",
+      "price": "15.00",
+      "id": 10
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2650661-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=135",
+      "title": "Tata Harper",
+      "text": "SuperKing Refining Cleanser",
+      "price": "88.00",
+      "id": 11
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2631380-main-zoom.jpg?imwidth=135",
+      "title": "NEST New York",
+      "text": "Balinese Coconut Perfume Oil",
+      "price": "98.00",
+      "id": 12
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2632008-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=135",
+      "title": "JVN",
+      "text": "Embody Volumizing Hair Foam",
+      "price": "29.00",
+      "id": 13
+    }
+  ],
+  "Just_Dropped": [
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2580611-main-zoom.jpg?imwidth=162",
+      "title": "Lancome",
+      "text": "UV Expert Defence SPF 50+ Primer & Moisturizer",
+      "price": "12.5",
+      "id": 1
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2639532-main-zoom.jpg?imwidth=135",
+      "title": "LANEIGE",
+      "text": "Amorepacific Lip Sleeping Mask",
+      "price": "35.00",
+      "id": 2
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2603645-main-zoom.jpg?imwidth=135",
+      "title": "GUCCI",
+      "text": "Mini Flora Gorgeous Gardenia Eau de Parfum Perfume Set",
+      "price": "96.00",
+      "id": 3
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2632826-main-zoom.jpg?imwidth=135",
+      "title": "OUAI",
+      "text": "Anti-Dandruff Shampoo",
+      "price": "6.00",
+      "id": 4
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2629475-main-zoom.jpg?imwidth=135",
+      "title": "Rare Beauty by Selena Gomez",
+      "text": "Positive Light Silky Touch Highlighter",
+      "price": "25.00",
+      "id": 5
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2650307-main-zoom.jpg?imwidth=135",
+      "title": "Fenty Beauty by Rihanna",
+      "text": "Fenty Eau de Parfum",
+      "price": "140.00",
+      "id": 6
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2635217-main-zoom.jpg?imwidth=135",
+      "title": "Innisfree",
+      "text": "Green Tea Hyaluronic Acid Hydrating Moisturizer",
+      "price": "29.00",
+      "id": 7
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2613297-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=135",
+      "title": "Skylar",
+      "text": "Peach Fields Eau de Parfum Rollerball",
+      "price": "29.00",
+      "id": 8
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2640670-main-zoom.jpg?imwidth=135",
+      "title": "Peter Thomas Roth",
+      "text": "Instant FIRM No-Filter Primer",
+      "price": "42.00",
+      "id": 9
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2613289-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=135",
+      "title": "SKYLAR",
+      "text": "Peach Fields Eau de Parfum",
+      "price": "85.00",
+      "id": 10
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2619849-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=135",
+      "title": "Biossance",
+      "text": "Squalane + Vitamin C Rose Brightening Moisturizer",
+      "price": "56.00",
+      "id": 11
+    }
+  ],
+  "Beauty_Offers": [
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2640407-main-zoom.jpg?imwidth=135",
+      "title": "Innisfree",
+      "text": "Green Tea Hyaluronic cid Face Cleanser",
+      "price": "12.00",
+      "id": 1
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s1533439-main-zoom.jpg?imwidth=97",
+      "title": "Too Faced",
+      "text": "Better Volumizing & Lengthening mascara",
+      "price": "28.00",
+      "id": 2
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s70680-main-zoom.jpg?imwidth=97",
+      "title": "CLINIQUE",
+      "text": "Almost Lipstick",
+      "price": "15.00",
+      "id": 3
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2585172-main-zoom.jpg?imwidth=97",
+      "title": "Mugler",
+      "text": "Alien Goddess Eau de Parfum Intense",
+      "price": "170.00",
+      "id": 4
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2482727-main-zoom.jpg?pb=allure-best-2021-badge&imwidth=97",
+      "title": "NARS",
+      "text": "Pwermatte Lip Pigment",
+      "price": "28.00",
+      "id": 5
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2101293-main-zoom.jpg?pb=allure-best-2021-badge&imwidth=97",
+      "title": "TOM FORD",
+      "text": "Lost Cheery",
+      "price": "390.00",
+      "id": 6
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2367985-main-zoom.jpg?imwidth=97",
+      "title": "Urban Decay",
+      "text": "Ultra Glow All nighter Setting Spray",
+      "price": "33.00",
+      "id": 7
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s1946680-main-zoom.jpg?imwidth=97",
+      "title": "Jo Malone London",
+      "text": "English Pear & Freesia Cologne",
+      "price": "155.00",
+      "id": 8
+    }
+  ],
+  "home_images": [
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2062412-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=97",
+      "title": "MILK MAKEUP",
+      "text": "KUSH High Volumizing Mascara",
+      "price": "26.00",
+      "id": 1
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s1292820-main-zoom.jpg?imwidth=97",
+      "title": "Bobbi Brown",
+      "text": "Vitamin Enriched Face Base Priming Moisturizer",
+      "price": "66.00",
+      "id": 2
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2370419-main-zoom.jpg?imwidth=97",
+      "title": "Valentino",
+      "text": "Voce Viva Eau de Parfum",
+      "price": "138.00",
+      "id": 3
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2606168-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=97",
+      "title": "JVN",
+      "text": "Complete Blowout Styling Milk",
+      "price": "29.00",
+      "id": 4
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2033264-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=97",
+      "title": "Olaplex",
+      "text": "No.3 Hair Repair Perfector",
+      "price": "30.00",
+      "id": 5
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s1946680-main-zoom.jpg?imwidth=97",
+      "title": "Jo Malone London",
+      "text": "English Pear & Freesia Cologne",
+      "price": "155.00",
+      "id": 6
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s875773-main-zoom.jpg?imwidth=97",
+      "title": "HERMES",
+      "text": "Un Jardin sur le Nil eau de Toilette",
+      "price": "140.00",
+      "id": 7
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2356855-main-zoom.jpg?pb=2020-03-sephora-clean-2019&imwidth=97",
+      "title": "Dae",
+      "text": "Signature Shampoo",
+      "price": "24.00",
+      "id": 8
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s563338-main-zoom.jpg?imwidth=97",
+      "title": "DOLCE & GABBANA",
+      "text": "Light Blue Eau de Toilette",
+      "price": "110.00",
+      "id": 9
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2569804-main-zoom.jpg?imwidth=97",
+      "title": "LANEIGE",
+      "text": "Water Bank Blue Haluronic Cream Moisturizer",
+      "price": "40.00",
+      "id": 10
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2319820-main-zoom.jpg?imwidth=97",
+      "title": "OUAI",
+      "text": "Detox Shampoo",
+      "price": "30.00",
+      "id": 11
+    }
+  ],
+  "Selling_Fast": [],
+  "Beauty_Insider_Reward": [],
+  "featured_categories": [],
+  "New": [],
+  "Brands": [],
+  "Makeup": [],
+  "Skincare": [],
+  "Hair": [],
+  "Fragrance": [],
+  "Tools&Brushes": [],
+  "Bath&Body": [],
+  "Mini_size": [],
+  "Gifts": [],
+  "cart": [
+    {
+      "img": "https://www.sephora.com/productimages/sku/s2640381-main-zoom.jpg?imwidth=135",
+      "title": "Innisfree",
+      "text": "Green Tea Hyaluronic Acid Hydrating Eye Cream",
+      "price": "26.00",
+      "id": 1671390468769
+    }
+  ],
+  "login": [
+    {
+      "name": "Harsh",
+      "email": "harsh@gmail.com",
+      "password": "123456",
+      "id": 1
+    }
+  ]
 }
