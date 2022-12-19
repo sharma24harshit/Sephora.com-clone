@@ -1,0 +1,216 @@
+.logo img{
+  width:140px;
+}
+.navbar-container{
+  display: flex;
+  height:90px;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-box1{ 
+  display: flex;
+  justify-content: space-evenly;
+  width:450px ;
+}
+.nav-box2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:220px ;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover{
+    text-decoration: underline;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .mid-nav-title{
+  font-size: 15px;
+  text-align: start;
+  font-weight: 600;
+  }
+  .mid-nav-p{
+    font-size: 11px;
+    text-align: start;
+    margin-top: -3px;
+    color: rgb(100, 95, 95);
+  }
+  /* //------------------------------------------------------// */
+  .dropdown:hover .dropdown-content {display: block;}
+   /* //------------------------------------------------------// */
+  .btn-1{
+background-color: black;
+color: white;
+border-radius: 25px;
+padding: 6px;
+font-size: 13px;
+font-weight: bold;
+width:150px;
+cursor: pointer;
+  }
+  .btn-2{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    width:60px;
+    cursor: pointer;
+  }
+  .btn-1-create-btn{
+    background-color: white;
+color: black;
+border: 2px solid black;
+border-radius: 25px;
+padding: 6px;
+font-size: 13px;
+font-weight: bold;
+width:150px;
+cursor: pointer;
+  }
+.nav-box1-div{
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 16px 0px;
+  }
+.nav-box1-h3{
+    font-weight: bold;
+    text-align: start;
+    margin-left: 15px;
+  }
+.nav-box1-sub_div{
+display: flex;
+padding: 10px;
+}
+.nav-box1-sub_div img{
+  width: 55px;
+}
+.nav-box1-p{
+  font-size: 12px;
+  margin-left: 10px;
+  color: rgb(114, 109, 109);
+}
+.login-btns{
+ display: flex;
+ justify-content: space-evenly; 
+}
+.nav_heading_icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:45px;
+}
+.nav_heading_icons:hover{
+  text-decoration: underline;
+}
+.nav_icons{
+  font-size: 25px;
+  margin-right: 4px;
+}
+.bottom_navbar{
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 45px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bottom_navbar>p:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+/* /--------------------------------------  Footer styling  -------------------------------------/ */
+.footer_top_box{
+display: flex;
+justify-content: space-evenly;
+margin-top: 60px;
+height:120px;
+align-items: center;
+color: white;
+background-color: black;
+cursor: pointer;
+}
+.footer_mid_box{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+color: white;
+background-color: black;
+cursor: pointer;
+text-align: start;
+padding: 40px 5px;
+line-height: 30px;
+}
+.footer_mid_mini_box{
+height:420px;
+}
+.footer_mid_mini_box>h2{
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+transition: transform ease 300ms;
+}
+.footer_mid_mini_box>h2:hover{
+  text-decoration: underline;
+  transform: translate(0px,-5px);
+}
+.footer_mid_mini_box>p{
+font-size: 14px;
+cursor: pointer;
+transition: transform ease 200ms;
+}
+.footer_mid_mini_box>p:hover{
+  transform: translate(0px,-5px);
+  text-decoration: underline;
+}
+.mid-nav-p1{
+  font-size: 11px;
+    text-align: start;
+    margin-top: -3px;
+}
+.footer_mid_mini_box>h1{
+  font-size: 30px;
+}
+
+.bottom_footer_box{
+display: flex;
+text-align: start;
+padding: 40px 65px;
+background-color: black;
+color: white;
+justify-content: space-between;
+
+}
+.bottom_footer_box_link{
+display: flex;
+text-align: start;
+justify-content: space-between;
+width:450px;
+}
+.bottom_footer_box_link>p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottom_footer_box1{
+  font-size: 13px;
+}
+.bottom_footer_box2{
+display: flex;
+justify-content: space-evenly;
+width:350px;
+align-items: center;
+font-size: 25px;
+}
