@@ -1,3 +1,4 @@
+import "./style.css";
 import {Link} from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -13,7 +14,7 @@ function Login(){
                                                     
 const postdata = async(obj)=>{
   try {
-    const response  = await fetch (`http://localhost:8080/login`,{
+    const response  = await fetch (`https://allure-mock-server.onrender.com/login`,{
   method:"POST",
   body:JSON.stringify(obj),
   headers:{
@@ -31,7 +32,7 @@ setObj({name:"",email:"",password:""})
 
 const postdata1 = async(obj1)=>{
   try {
-    const response  = await fetch (`http://localhost:8080/login`);
+    const response  = await fetch (`https://allure-mock-server.onrender.com/login`);
     const res = await response.json();
    const datas =  res.filter((el)=>{
     if(obj1.email===el.email && obj1.password===el.password){
@@ -78,38 +79,38 @@ const handleSubmit1 = (e)=>{
 return (
     <div>
       <Navbar/>
-        <h1>
-          welcome  Login page
+        <h1 className="login_page_heading" >
+          Enter Your Detials
         </h1>
      
-     <div style={{display:"flex"}} > 
-
-     <div  >
-    <form  onSubmit={handleSubmit} style={{border:"1px solid black",width:"40%",margin:"auto",marginTop:"20px"}} >
+     <div className="main_login_box" > 
       
-      <input type="text" placeholder="Name" name="name" onChange={handleChange} style={{border:"1px solid black"}} value={obj.name}/><br />
-      <input type="email"  placeholder="Email" name="email" onChange={handleChange} style={{border:"1px solid black"}} value={obj.email}/><br />
-      <input type="password" placeholder="Password" name="password" onChange={handleChange} style={{border:"1px solid black"}} value={obj.password}/><br />
-      {/* <input type="number" placeholder="price" name="price" onChange={handleChange} style={{border:"1px solid black"}} value={obj.price}/><br /> */}
-      <input type="submit" value="submit" />
+     <div className="login_container" >
+      <h1>Create Account</h1>
+    <form  onSubmit={handleSubmit}  className="form" >
+      
+      <input type="text" placeholder="Name" name="name" onChange={handleChange} value={obj.name}/><br />
+      <input type="email"  placeholder="Email" name="email" onChange={handleChange}  value={obj.email}/><br />
+      <input type="password" placeholder="Password" name="password" onChange={handleChange}  value={obj.password}/><br />
+      {/* <input type="number" placeholder="price" name="price" onChange={handleChange}  value={obj.price}/><br /> */}
+      <input type="submit" value="Join Now" />
     </form>
     </div>
 
-    <div  >
-    <form  onSubmit={handleSubmit1} style={{border:"1px solid black",width:"40%",margin:"auto",marginTop:"20px"}} >
-      
-     
-      <input type="email"  placeholder="Email" name="email" onChange={handleChange1} style={{border:"1px solid black"}} value={obj1.email}/><br />
-      <input type="password" placeholder="Password" name="password" onChange={handleChange1} style={{border:"1px solid black"}} value={obj1.password}/><br />
-      {/* <input type="number" placeholder="price" name="price" onChange={handleChange} style={{border:"1px solid black"}} value={obj.price}/><br /> */}
-      <input type="submit" value="submit" />
+    <div  className="login_container">
+      <h1>Sign In</h1>
+    <form  onSubmit={handleSubmit1}  className="form">
+      <input type="email"  placeholder="Email" name="email" onChange={handleChange1}  value={obj1.email}/><br />
+      <input type="password" placeholder="Password" name="password" onChange={handleChange1}  value={obj1.password}/><br />
+      {/* <input type="number" placeholder="price" name="price" onChange={handleChange}  value={obj.price}/><br /> */}
+      <input type="submit" value="Sign In" />
     </form>
     </div>
 
      </div>
     
         <br />
-        <button><Link to="/admin" >Admin Page</Link></button>
+        <button className="adminPage_btn" ><Link to="/admin" >Admin Page</Link></button>
         <Footer/>
     </div>
 )

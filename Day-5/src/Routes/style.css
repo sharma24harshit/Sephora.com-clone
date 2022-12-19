@@ -266,7 +266,88 @@ margin-top: 10px;
     background-color: red;
 }
 .cart_remove_btn{
-    border:1px solid black;
+    border:2px solid black;
     padding:6px;
     border-radius: 10px;
+}
+.cart_remove_btn:hover{
+  background-color: rgb(163, 160, 160);
+  color: white;
+  font-weight: bold;
+}
+.totalAmount_box{
+ font-size: 20px;
+}
+.checkout_btn{
+    border:2px solid red;
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+/* /-------------------------------------   Login Page styling -------------------------------------------/ */
+.main_login_box{
+ display: flex;
+ width:70%;
+ margin: auto;
+}
+.login_container{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+width:40%;
+margin: auto;
+justify-content: space-between;
+margin-top: 60px;
+height:450px;
+}
+.login_container>h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.form{
+    width:80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+.form>input{
+    border:2px solid rgb(105, 103, 103);
+    width:90%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.form>input[type="submit"]{
+border:0px;
+background-color: black;
+color: white;
+font-size: 18px;
+font-weight: bold;
+}
+.form>input[type="submit"]:hover{
+    background-color: rgb(68, 65, 65);
+   cursor: pointer;
+}
+.login_page_heading{
+font-size: 45px;
+font-weight: bold;
+margin-top: 30px;
+}
+.adminPage_btn{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-decoration: underline;
+    color: blue;
+}
+.adminpage_main_box{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+width:40%;
+margin: auto;
+justify-content: space-between;
+margin-top: 60px;
+height:450px;
 }

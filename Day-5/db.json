@@ -767,11 +767,18 @@
   "Gifts": [],
   "cart": [
     {
-      "img": "https://www.sephora.com/productimages/sku/s2640381-main-zoom.jpg?imwidth=135",
-      "title": "Innisfree",
-      "text": "Green Tea Hyaluronic Acid Hydrating Eye Cream",
-      "price": "26.00",
-      "id": 1671390468769
+      "img": "https://www.sephora.com/productimages/sku/s2623460-main-zoom.jpg?imwidth=135",
+      "title": "Maison Margiela",
+      "text": "REPLICA By The Fireplace Fragrance & Candle Duo Set",
+      "price": "76.00",
+      "id": 1671423786823
+    },
+    {
+      "img": "https://www.sephora.com/productimages/sku/s1946680-main-zoom.jpg?imwidth=97",
+      "title": "Jo Malone London",
+      "text": "English Pear & Freesia Cologne",
+      "price": "155.00",
+      "id": 1671423814206
     }
   ],
   "login": [

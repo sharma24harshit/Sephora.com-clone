@@ -43,7 +43,7 @@ fetchdata()
 },[])
 const fetchdata =async()=>{
   try {
-    const response = await fetch(`http://localhost:8080/Home`);
+    const response = await fetch(`https://allure-mock-server.onrender.com/Home`);
     const res = await response.json();
     //console.log(res)
     setdata1(res.chosen_for_you);

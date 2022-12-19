@@ -1,3 +1,4 @@
+import "./style.css";
 import { useContext,useEffect,useState } from "react";
 import { AuthContext } from "../AuthContext/AuthContext";
 import Navbar from "../Components/Navbar";
@@ -12,7 +13,7 @@ function ProductsPage(){
         },[])
         const fetchdata =async()=>{
           try {
-            const response = await fetch(`http://localhost:8080/${baseUrl}`);
+            const response = await fetch(`https://allure-mock-server.onrender.com/${baseUrl}`);
             const res = await response.json();
             setdata1(res);
            

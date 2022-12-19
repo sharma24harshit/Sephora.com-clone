@@ -1,3 +1,4 @@
+import "./style.css";
 import { useParams } from "react-router-dom";
 import { useState,useEffect ,useContext} from "react";
 import { AuthContext } from "../AuthContext/AuthContext";
@@ -16,7 +17,7 @@ function SingleProductPage(){
   
  const fetchdata =async()=>{
     try {
-      const response = await fetch(`http://localhost:8080/${baseUrl}/${id}`);
+      const response = await fetch(`https://allure-mock-server.onrender.com/${baseUrl}/${id}`);
       const res = await response.json();
       setProd(res);
      
@@ -34,7 +35,7 @@ function SingleProductPage(){
 
   const addData =async(obj)=>{
     try {
-      const response = await fetch(`http://localhost:8080/cart`,{
+      const response = await fetch(`https://allure-mock-server.onrender.com/cart`,{
         method:"POST",
         body:JSON.stringify(obj),
         headers:{

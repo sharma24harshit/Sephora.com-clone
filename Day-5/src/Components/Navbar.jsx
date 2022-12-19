@@ -236,7 +236,7 @@ return (
   <p>Bath & Body</p>
   <p>Mini Size</p>
   <p>Gifts</p>
-  <p>Beuty Under $20</p>
+  <p>Beauty Under $20</p>
   <p>Sale & Offers</p>
 </div>
 </div>

@@ -1,12 +1,14 @@
+import "./style.css";
 import {useState} from "react";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 function Adminpage(){
   const[data,setData] = useState([]);
   const[obj,setObj] = useState({img:"",title:"",text:"",price:""});
                                                     // ,text:""
 const postdata = async(obj)=>{
   try {
-    const response  = await fetch (`http://localhost:8080/home_images`,{
+    const response  = await fetch (`https://allure-mock-server.onrender.com/home_images`,{
   method:"POST",
   body:JSON.stringify(obj),
   headers:{
@@ -34,19 +36,21 @@ setObj({...obj,[e.target.name]:e.target.value});
   return (
     <div>
       <Navbar/>
+
+      <h1 className="login_page_heading" >Welcome To Admin Page</h1>
     
-    <div  >
-    <form  onSubmit={handleSubmit} style={{border:"1px solid black",width:"40%",margin:"auto",marginTop:"20px"}} >
+    <div  className="adminpage_main_box" >
+    <form  onSubmit={handleSubmit} className="form" >
       
-      <input type="text" placeholder="img" name="img" onChange={handleChange} style={{border:"1px solid black"}} value={obj.img}/><br />
-      <input type="text"  placeholder="title" name="title" onChange={handleChange} style={{border:"1px solid black"}} value={obj.title}/><br />
-      <input type="text" placeholder="text" name="text" onChange={handleChange} style={{border:"1px solid black"}} value={obj.text}/><br />
-      <input type="number" placeholder="price" name="price" onChange={handleChange} style={{border:"1px solid black"}} value={obj.price}/><br />
-      <input type="submit" value="submit" />
+      <input type="text" placeholder="Product Image Link" name="img" onChange={handleChange}  value={obj.img}/><br />
+      <input type="text"  placeholder="Enter Product Title" name="title" onChange={handleChange}  value={obj.title}/><br />
+      <input type="text" placeholder="Enter Product Text" name="text" onChange={handleChange}  value={obj.text}/><br />
+      <input type="number" placeholder="Enter Product Price" name="price" onChange={handleChange}  value={obj.price}/><br />
+      <input type="submit" value="Add Product" />
     </form>
     </div>
     
-     
+     <Footer/>
 
     </div>
   )
