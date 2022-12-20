@@ -6,6 +6,7 @@ import HomePageCard2 from "../Components/HomePageCard2";
 import Footer from "../Components/Footer";
 import { AuthContext } from "../AuthContext/AuthContext";
 import { useNavigate } from "react-router-dom";
+import {Loader1} from "../Components/Loaders";
 function Home(){
  const [data1,setdata1]  = useState([]);
  const [data2,setdata2]  = useState([]);
@@ -16,6 +17,7 @@ function Home(){
  const [data7,setData7]  = useState([]);
  const { setBaseUrl} = useContext(AuthContext);
  const navigate = useNavigate();
+ const [loader,setLoader] = useState(false);
 //  const [data8,setdata8]  = useState(0);
  
  
@@ -42,6 +44,7 @@ useEffect(()=>{
 fetchdata()
 },[])
 const fetchdata =async()=>{
+  setLoader(true);
   try {
     const response = await fetch(`https://allure-mock-server.onrender.com/Home`);
     const res = await response.json();
@@ -52,7 +55,8 @@ const fetchdata =async()=>{
     setdata4(res.beauty_insider_rewards);
     setdata5(res.featured_categories);
     setdata6(res.need_a_little_guidance);
-    setData7(res.beauty_offers)
+    setData7(res.beauty_offers);
+    setLoader(false);
   } catch (error) {
     console.log(error)
   }
@@ -89,24 +93,24 @@ const handleClick3 = ()=>{
  
  
 {/* / ---------------------------- Chosen For You ---------------------------------------- / */}
-    <h2 className="product_heading" >Chosen For You</h2>
-     <div className="grid_container">
+   <h2 className="product_heading" >Chosen For You</h2>
+   {loader?<Loader1/> :  <div className="grid_container">
       {data1 && data1.map((el)=>(
         <div key={el.id} className="grid_box" onClick={handleClick} >
         <HomePageCard1  id={el.id} img={el.img} title={el.title} text={el.text} />
        </div>
       ))}
-     </div>
+     </div>}
 
 {/* / ----------------------------- Just Dropped ---------------------------------------- / */}
      <h2 className="product_heading" >Just Dropped</h2>
-     <div className="grid_container">
+     {loader?<Loader1/> : <div className="grid_container">
       {data2 && data2.map((el)=>(
         <div key={el.id} className="grid_box" onClick={handleClick1} >
         <HomePageCard1  id={el.id} img={el.img} title={el.title} text={el.text} />
        </div>
       ))}
-     </div>
+     </div>}
 
 {/* / --------------------------- Beauty Insider Rewards -------------------------------------------- / */}
 <div style={{marginBottom:"60px"}} >
@@ -114,7 +118,7 @@ const handleClick3 = ()=>{
 <p></p>
  </div>
 
-     <div className="grid_container2">
+ {loader?<Loader1/> : <div className="grid_container2">
       {data7 && data7.map((el)=>(
         <div key={el.id} className="grid_box" onClick={handleClick2} >
        <div className="grid_img" ><img src={el.img} alt={el.id} /></div>
@@ -126,7 +130,7 @@ const handleClick3 = ()=>{
          <button className="cart_btn" style={{marginBottom:"20px"}} >Apply</button>
        </div>
       ))}
-     </div>    
+     </div> }   
 
 {/* / --------------------------- Image section 1 -------------------------------------------- / */}
 
@@ -162,20 +166,20 @@ const handleClick3 = ()=>{
 </div>
 {/* / --------------------------- Selling Fast -------------------------------------------- / */}
 <h2 className="product_heading" >Selling Fast</h2>
-     <div className="grid_container">
+{loader?<Loader1/> : <div className="grid_container">
       {data3 && data3.map((el)=>(
         <div key={el.id} className="grid_box" >
         <HomePageCard1  id={el.id} img={el.img} title={el.title} text={el.text} />
        </div>
       ))}
-     </div>
+     </div>}
 {/* / --------------------------- Beauty Insider Rewards -------------------------------------------- / */}
  <div >
  <h2 className="product_heading" >Beauty Insider Rewards</h2>
 <p>Sign in to redeem your points</p>
  </div>
 
-     <div className="grid_container">
+ {loader?<Loader1/> :<div className="grid_container">
       {data4 && data4.map((el)=>(
         <div key={el.id} className="grid_box" >
        <div className="grid_img" ><img src={el.img} alt={el.id} /></div>
@@ -187,20 +191,20 @@ const handleClick3 = ()=>{
          </div>
        </div>
       ))}
-     </div>    
+     </div>}    
 {/* / --------------------------- Featured Categories -------------------------------------------- / */}
  <div className="flexCard1_home"  style={{heigth:"200px"}} >
     <div className="text_container1" >
      <h2 className="product_heading" >Featured Categories</h2>
      <p>Shop what's popular now.</p>
     </div>
-    <div className="grid_container1">
+    {loader?<Loader1/> :<div className="grid_container1">
       {data5 && data5.map((el)=>(
         <div key={el.id} className="grid_box" >
           <HomePageCard2 id={el.id}  img={el.img} title={el.title} />
        </div>
       ))}
-     </div>    
+     </div> }  
  </div>
 
 {/* / --------------------------- Need a Little Guidance -------------------------------------------- / */}
@@ -209,13 +213,13 @@ const handleClick3 = ()=>{
      <h2 className="product_heading" >Need a Little Guidance?</h2>
      <p>Check out our quizzes and buying guides</p>
     </div>
-    <div className="grid_container1">
+    {loader?<Loader1/> : <div className="grid_container1">
       {data6 && data6.map((el)=>(
         <div key={el.id} className="grid_box" >
           <HomePageCard2 id={el.id}  img={el.img} title={el.title} />
        </div>
       ))}
-     </div>    
+     </div> }   
  </div>
 
 {/* / --------------------------- Image section 2-------------------------------------------- / */}

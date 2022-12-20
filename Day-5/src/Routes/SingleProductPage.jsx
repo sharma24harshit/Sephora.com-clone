@@ -1,13 +1,17 @@
 import "./style.css";
-import { useParams } from "react-router-dom";
+import { useParams ,Link} from "react-router-dom";
 import { useState,useEffect ,useContext} from "react";
 import { AuthContext } from "../AuthContext/AuthContext";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Loader3 } from "../Components/Loaders";
 function SingleProductPage(){
     const {id} = useParams();
     const [prod,setProd] = useState({});
+    const [loader,setLoader] = useState(false);
     const { baseUrl} = useContext(AuthContext);
+    const [btnText,setbtntext] = useState("Add To Cart");
+    const [addBtn,setaddBtn] = useState(false);
     //console.log(baseUrl,id)
  useEffect(()=>{
     
@@ -16,11 +20,12 @@ function SingleProductPage(){
  },[id]);
   
  const fetchdata =async()=>{
+  setLoader(true);
     try {
       const response = await fetch(`https://allure-mock-server.onrender.com/${baseUrl}/${id}`);
       const res = await response.json();
       setProd(res);
-     
+     setLoader(false);
     } catch (error) {
       console.log(error)
     }
@@ -28,6 +33,8 @@ function SingleProductPage(){
   };
 
   const handlebtn = (newId)=>{
+    setbtntext("Added");
+    setaddBtn(true);
     const obj = {...prod,id:Math.floor(Number(newId)+Math.random()+Date.now()) }
     
     addData(obj)
@@ -54,7 +61,7 @@ return (
     <div>
         <Navbar/>
 
-        <div key={prod.id} className="single_product_box" >
+        {loader?<Loader3/> :<div key={prod.id} className="single_product_box" >
        <div className="single_product_img" ><img src={prod.img} alt={prod.id} /></div>
          <div className="single_product_text" >
           <h3>{prod.title}</h3>
@@ -63,9 +70,15 @@ return (
           <br /><span>Size: 1.1 oz/34ml</span>
           </h2>
           
-          <button className="single_product_cart_btn"  onClick={()=>handlebtn(prod.id)}  >Add To Cart</button>
+          <button className="single_product_cart_btn"  disabled={addBtn?true:false} onClick={()=>handlebtn(prod.id)}  >{btnText}</button>
+           <br />
+           <br />
+           <br />
+           <Link to="/cart" ><p style={{textDecoration:"underline" , 
+          fontSize:"14px", color:"blue"
+          }} > Cart Page</p></Link>
          </div>
-       </div>
+       </div>}
        <Footer/>
     </div>
 )

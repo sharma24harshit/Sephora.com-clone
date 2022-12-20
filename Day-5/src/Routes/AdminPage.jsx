@@ -15,7 +15,7 @@ const postdata = async(obj)=>{
     'Content-Type':'application/json',
   }
 });
-const res = await response.json();
+//const res = await response.json();
 setObj({img:"",title:"",text:"",price:""})    
 // ,text:""
   } catch (error) {
